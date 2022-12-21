@@ -112,5 +112,6 @@ if (GTEST)
 
     # Link GTest
     target_link_libraries(${TARGET_TEST} PRIVATE gtest gtest_main)
+    set_target_properties(${TARGET_TEST} PROPERTIES OUTPUT_NAME test_${TARGET_LIB})
 endif()
 #############################################################################
