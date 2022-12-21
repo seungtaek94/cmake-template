@@ -71,10 +71,10 @@ message(STATUS "====> [Notice][${TARGET_LIB}] Target Source: ${SOURCES}")
 
 add_library(${TARGET_LIB} SHARED ${SOURCES})
 
-# 사전 컴파일 헤더 추가
+# For Precompiled Header
 target_precompile_headers(${TARGET_LIB} PRIVATE "${CMAKE_HOME_DIRECTORY}/src/pch.h")
 
-#출력 파일 이름 설정
+# Set library output name
 set_target_properties(${TARGET_LIB} PROPERTIES OUTPUT_NAME ${TARGET_LIB})
 set_target_properties(${TARGET_LIB} PROPERTIES DEBUG_POSTFIX "_d")
 #############################################################################
