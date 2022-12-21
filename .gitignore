@@ -1,0 +1,7 @@
+.idea
+.vs
+cmake-build-*/
+*.exe
+*.zip
+*.tgz
+RESULT
