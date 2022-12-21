@@ -3,10 +3,10 @@ Simple cmake template for C++ shared library projects with google-test.
 
 
 ## Build Status
-| System    | Debug                                                                                                                | Release |
-|-----------|----------------------------------------------------------------------------------------------------------------------|---------|
-| win-x64   | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_win-x64_debug.yml/badge.svg)   | - |
-| linux-x64 | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_linux-x64_debug.yml/badge.svg) | - |
+| System    | Debug                                                                                                                | Release                                                                                                                |
+|-----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| win-x64   | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_win-x64_debug.yml/badge.svg)   | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_win-x64_release.yml/badge.svg)   |
+| linux-x64 | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_linux-x64_debug.yml/badge.svg) | ![Build Status](https://github.com/seungtaek94/cmake-template/actions/workflows/build_linux-x64_release.yml/badge.svg) |
 
 ## Requirements
 

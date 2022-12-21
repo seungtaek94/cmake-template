@@ -1,4 +1,4 @@
-name: win-x64_debug
+name: linux-x64_release
 
 # Controls when the workflow will run
 on:
@@ -13,8 +13,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build_win-x64_debug:
-    runs-on: windows-2019
+  build_linux-x64_release:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -26,11 +26,11 @@ jobs:
 
       - name: Build
         run: |
-          cmake -G "Visual Studio 16 2019" -DCMAKE_BUILD_TYPE=Debug -S .\ -B .\build 
-          cmake --build .\build --config Debug --target MyLib
-          cmake --build .\build --config Debug --target MyTests
+          cmake -DCMAKE_BUILD_TYPE=Release -S ./ -B ./build 
+          cmake --build ./build --config Release --target MyLib
+          cmake --build ./build --config Release --target MyTests
 
       - name: Test
         run: |
-          cd .\RESULT\win-x64\Debug
-          .\test_MyLib.exe
+          cd ./RESULT/linux-x64/Release
+          ./test_MyLib
